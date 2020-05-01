@@ -1,10 +1,0 @@
-
-Lsquid:S1068")Remove this unused "cache" private field.(¿‰ÿ»üÿÿÿÿ8Ê™€ò‹.
-wsquid:S1450"TRemove the "cache" field and declare it as a local variable in the relevant methods.(¿‰ÿ»üÿÿÿÿ8Ê™€ò‹.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(°‹Žÿ8Ê™€ò‹.
-V
-squid:S106""9Replace this use of System.out or System.err by a logger.(úúƒ‘8Ê™€ò‹.
-V
-squid:S106("9Replace this use of System.out or System.err by a logger.(¢”·ü8Ê™€ò‹.
-isquid:S2142%"FEither re-interrupt this method or rethrow the "InterruptedException".(è®ã¶øÿÿÿÿ8Ê™€ò‹.

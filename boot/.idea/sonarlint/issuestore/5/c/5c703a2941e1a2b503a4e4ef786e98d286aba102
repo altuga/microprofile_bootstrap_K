@@ -1,10 +1,0 @@
-
-Hsquid:UselessImportCheck"Remove this duplicated import.(Þãw8ÿ€ þŠ.
-Isquid:UselessImportCheck"Remove this duplicated import.(ÉÀ¤ê8ÿ€ þŠ.
-Zsquid:S2629>"7Use the built-in formatting to construct this argument.(åãÿ¨ÿÿÿÿÿ8Í’ýð‹.
-zsquid:S2629A"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(—Ÿ÷î8¦†Ïñ‹.
-Nsquid:UselessImportCheck"Remove this duplicated import.(Š§¢éùÿÿÿÿ8ÿ€ þŠ.
-Isquid:UselessImportCheck"Remove this duplicated import.(Žžä¬8ÿ€ þŠ.
-‚squid:UselessImportCheck"RRemove this unused import 'org.eclipse.microprofile.config.inject.ConfigProperty'.(è“õÂûÿÿÿÿ8ÿ€ þŠ.
-Isquid:UselessImportCheck"Remove this duplicated import.(ì–íÔ8ÿ€ þŠ.
-nsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(Öç†Íøÿÿÿÿ8¸þ¤þŠ.

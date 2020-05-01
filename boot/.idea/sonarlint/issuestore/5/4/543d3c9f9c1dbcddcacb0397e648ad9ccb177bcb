@@ -1,11 +1,0 @@
-
-[squid:UselessImportCheck"0Remove this unused import 'javax.inject.Inject'.(ì–íÔ8­‚Äð‹.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Õ¼å²üÿÿÿÿ8¯óªð‹.
-€squid:UselessImportCheck"URemove this unused import 'org.eclipse.microprofile.metrics.annotation.RegistryType'.(íƒõî8­‚Äð‹.
-Isquid:UselessImportCheck
-"Remove this duplicated import.(ùÓ™ñ8¯óªð‹.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(—ÇŸ°8¯óªð‹.
-wsquid:UselessImportCheck"LRemove this unused import 'org.eclipse.microprofile.metrics.MetricRegistry'.(Ê¦ðŸ8­‚Äð‹.
-Isquid:UselessImportCheck"Remove this duplicated import.(šõ¶ 8¯óªð‹.
