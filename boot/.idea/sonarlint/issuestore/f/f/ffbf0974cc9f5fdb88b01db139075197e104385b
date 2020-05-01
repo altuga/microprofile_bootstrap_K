@@ -1,0 +1,17 @@
+
+nsquid:UselessImportCheck">Remove this unused import 'javax.transaction.UserTransaction'.(Å§Ö‰ûÿÿÿÿ8ª–„şŠ.
+ksquid:UselessImportCheck"@Remove this unused import 'javax.transaction.RollbackException'.(×áÿ½8ÃÉ„şŠ.
+Nsquid:UselessImportCheck"Remove this duplicated import.(ê°İÒıÿÿÿÿ8î‹ÉüŠ.
+_squid:UselessImportCheck"4Remove this unused import 'java.util.logging.Level'.(…µÛ¶8ÃÉ„şŠ.
+nsquid:UselessImportCheck">Remove this unused import 'javax.transaction.SystemException'.(³ÓÌÖúÿÿÿÿ8ÃÉ„şŠ.
+Nsquid:UselessImportCheck
+"Remove this duplicated import.(Õë±Äøÿÿÿÿ8î‹ÉüŠ.
+ssquid:UselessImportCheck"IRemove this unused import 'javax.transaction.HeuristicRollbackException'.(¬àÎ~8ÃÉ„şŠ.
+[
+squid:S106+"9Replace this use of System.out or System.err by a logger.(¯ºíµşÿÿÿÿ8î‹ÉüŠ.
+Nsquid:UselessImportCheck"Remove this duplicated import.(ğàËÒıÿÿÿÿ8î‹ÉüŠ.
+asquid:UselessImportCheck"6Remove this unused import 'javax.annotation.Resource'.(î¾Ì—8«Ü“ıŠ.
+`squid:UselessImportCheck"5Remove this unused import 'java.util.logging.Logger'.(ƒ¥óš8ÃÉ„şŠ.
+tsquid:UselessImportCheck"DRemove this unused import 'javax.transaction.NotSupportedException'.(¹ïüÿÿÿÿ8ë«„şŠ.
+vsquid:UselessImportCheck"FRemove this unused import 'javax.transaction.HeuristicMixedException'.(Ü³Œãûÿÿÿÿ8ÃÉ„şŠ.
+[squid:UselessImportCheck"0Remove this unused import 'javax.ejb.Singleton'.(Æí—¿8î‹ÉüŠ.
