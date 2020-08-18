@@ -1,6 +1,0 @@
-com/kodcu/boot/metric/MetricController.class
-com/kodcu/boot/HelloController.class
-com/kodcu/boot/BootRestApplication.class
-com/kodcu/boot/health/ServiceLiveHealthCheck.class
-com/kodcu/boot/health/ServiceReadyHealthCheck.class
-com/kodcu/boot/config/ConfigTestController.class
