@@ -3,6 +3,10 @@
 
     <featureManager>
         <feature>microProfile-3.3</feature>
+        <feature>jpa-2.2</feature>
+        <feature>jaxrs-2.1</feature>
+        <feature>jsonb-1.0</feature>
+        <feature>cdi-2.0</feature>
     </featureManager>
 
     <httpEndpoint id="defaultHttpEndpoint"
@@ -21,4 +25,13 @@
     <!-- The MP JWT configuration that injects the caller's JWT into a ResourceScoped bean for inspection. -->
     <mpJwt id="jwtUserConsumer" keyName="theKeyId" audiences="targetService" issuer="${jwt.issuer}"/>
 
+
+    <library id="derbyJDBCLib">
+        <fileset dir="${server.config.dir}/derby" includes="derby*.jar"/>
+    </library>
+
+    <dataSource id="hospitalServiceJPADataSource" jndiName="jdbc/hospitalServiceDataSource">
+        <jdbcDriver libraryRef="derbyJDBCLib" />
+        <properties.derby.embedded databaseName="HospitalServiceDB" createDatabase="create"/>
+    </dataSource>
 </server>
