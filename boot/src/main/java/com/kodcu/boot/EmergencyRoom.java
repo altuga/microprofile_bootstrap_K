@@ -17,6 +17,12 @@ public class EmergencyRoom {
 
     public void save(Doctor doctor) {
         entityManager.merge(doctor);
+
+        //DB -->
+        // entityManager.flush();
+        // DB <--
+        // entityManager.refresh(doctor);
+        //
     }
 
     public List<Doctor> getDoctorList() {
