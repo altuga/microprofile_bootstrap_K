@@ -12,7 +12,7 @@ public class MyEntityManager {
 
     public Object merge(Object object) {
 
-        Object copy =  null; ,
+        Object copy =  null;
         //copy = object.clone();
         freshlyCreated.add(copy);
         return copy;
