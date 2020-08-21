@@ -12,9 +12,25 @@
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.source>1.8</maven.compiler.source>
     <openliberty.version>[19.0.0.9,)</openliberty.version>
+    <derby.version>10.14.2.0</derby.version>
     <final.name>boot</final.name>
   </properties>
   <dependencies>
+
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+      <version>8.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.openliberty</groupId>
+      <artifactId>openliberty-runtime</artifactId>
+      <version>20.0.0.8</version>
+      <type>zip</type>
+    </dependency>
+
     <dependency>
       <groupId>org.eclipse.microprofile</groupId>
       <artifactId>microprofile</artifactId>
@@ -22,6 +38,13 @@
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derby</artifactId>
+      <version>${derby.version}</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>boot</finalName>
@@ -62,6 +85,26 @@
               </bootstrapProperties>
             </configuration>
           </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.1.2</version>
+            <executions>
+              <execution>
+                <id>copy-derby-dependency</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>copy-dependencies</goal>
+                </goals>
+                <configuration>
+                  <includeArtifactIds>derby</includeArtifactIds>
+                  <outputDirectory>src/main/liberty/config/derby</outputDirectory>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
         </plugins>
       </build>
       <dependencies>

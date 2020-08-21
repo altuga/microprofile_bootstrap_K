@@ -6,8 +6,8 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "Doctor")
-@NamedQuery(name = "Event.findAll", query = "SELECT d FROM Doctor d")
-@NamedQuery(name = "Event.findDoctor", query = "SELECT d FROM Doctor d WHERE "
+@NamedQuery(name = "Doctor.findAll", query = "SELECT d FROM Doctor d")
+@NamedQuery(name = "Doctor.findDoctor", query = "SELECT d FROM Doctor d WHERE "
         + "d.name = :name ")
 public class Doctor {
 

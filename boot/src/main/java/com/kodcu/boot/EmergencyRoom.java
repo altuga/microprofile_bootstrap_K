@@ -1,10 +1,15 @@
 package com.kodcu.boot;
 
 import javax.ejb.Singleton;
+import javax.ejb.Stateless;
+import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+import java.util.List;
 
-@Singleton
+@Stateless
+@Transactional(Transactional.TxType.REQUIRED)
 public class EmergencyRoom {
 
     @PersistenceContext
@@ -14,9 +19,12 @@ public class EmergencyRoom {
         entityManager.merge(doctor);
     }
 
+    public List<Doctor> getDoctorList() {
+        return entityManager.
+                createNamedQuery("Doctor.findAll", Doctor.class).getResultList();
+    }
+
     public String name;
 
-    public EmergencyRoom(String name) {
-        this.name = name;
-    }
+
 }
