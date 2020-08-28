@@ -1,5 +1,6 @@
 package com.kodcu.boot;
 
+import org.eclipse.microprofile.metrics.annotation.Counted;
 import org.eclipse.microprofile.metrics.annotation.Metered;
 
 import javax.inject.Inject;
@@ -36,6 +37,7 @@ public class HospitalController {
 
     @GET
     @Path("doctors")
+    @Counted(name = "list_of_doctors")
     public List<Doctor> getDoctorListinER() {
         return emergencyRoom.getDoctorList();
     }
