@@ -22,4 +22,13 @@ public class Doctor {
     public String sayHello() {
         return "say Hello" ;
     }
+
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
 }

@@ -2,6 +2,7 @@ package com.kodcu.boot;
 
 import javax.ejb.Singleton;
 import javax.ejb.Stateless;
+import javax.enterprise.event.Event;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.persistence.EntityManager;
@@ -9,8 +10,6 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.logging.Logger;
-
-@Stateless
 @Transactional(Transactional.TxType.REQUIRED)
 public class EmergencyRoom {
 
@@ -20,10 +19,19 @@ public class EmergencyRoom {
     @PersistenceContext
     EntityManager entityManager;
 
+    @Inject
+    Event<Doctor> listeners;
+
+    @Inject
+    Doesntmatter doesntmatter;
+
+
     public void save(Doctor doctor) {
-        entityManager.merge(doctor);
+        listeners.fire(doctor) ;
+        entityManager.persist(doctor);
         logger.warning("log doctor name  --> " + doctor.name);
 
+        doesntmatter.save();
         //DB -->
         // entityManager.flush();
         // DB <--

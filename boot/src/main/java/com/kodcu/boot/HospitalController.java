@@ -1,5 +1,7 @@
 package com.kodcu.boot;
 
+import org.eclipse.microprofile.metrics.annotation.Metered;
+
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import javax.interceptor.Interceptors;
@@ -24,11 +26,11 @@ public class HospitalController {
     @Inject
     EmergencyRoom emergencyRoom;
 
+
     @GET
     public String sayHello() {
         doctor.name = "Ahmet";
         doctor.surname = "Er";
-        emergencyRoom.save(doctor);
         return doctor.getClass().getName();
     }
 
@@ -40,8 +42,10 @@ public class HospitalController {
 
     @POST
     @Path("savedoc")
+    @Metered
     public void saveDoctor(Doctor doctor) {
         emergencyRoom.save(doctor);
+
     }
 
 

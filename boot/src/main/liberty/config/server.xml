@@ -7,7 +7,9 @@
         <feature>jaxrs-2.1</feature>
         <feature>jsonb-1.0</feature>
         <feature>cdi-2.0</feature>
+        <feature>ejb-3.2</feature>
     </featureManager>
+
 
     <httpEndpoint id="defaultHttpEndpoint"
                   httpPort="9080"
@@ -17,6 +19,8 @@
         <classloader apiTypeVisibility="+third-party" />
     </webApplication>
     <mpMetrics authentication="false"/>
+
+
 
     <!-- This is the keystore that will be used by SSL and by JWT. -->
     <keyStore id="defaultKeyStore" location="public.jks" type="JKS" password="atbash" />
