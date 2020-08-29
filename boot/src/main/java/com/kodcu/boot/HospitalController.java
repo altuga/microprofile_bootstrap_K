@@ -1,6 +1,9 @@
 package com.kodcu.boot;
 
+import org.eclipse.microprofile.metrics.Metric;
+import org.eclipse.microprofile.metrics.MetricUnits;
 import org.eclipse.microprofile.metrics.annotation.Counted;
+import org.eclipse.microprofile.metrics.annotation.Gauge;
 import org.eclipse.microprofile.metrics.annotation.Metered;
 
 import javax.inject.Inject;
@@ -38,6 +41,7 @@ public class HospitalController {
     @GET
     @Path("doctors")
     @Counted(name = "list_of_doctors")
+    @Gauge(unit = MetricUnits.MINUTES)
     public List<Doctor> getDoctorListinER() {
         return emergencyRoom.getDoctorList();
     }
