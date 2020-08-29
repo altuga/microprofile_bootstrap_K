@@ -30,18 +30,19 @@ public class HospitalController {
     @Inject
     EmergencyRoom emergencyRoom;
 
+    @Inject
+    MRMachine mrMachine;
 
     @GET
     public String sayHello() {
         doctor.name = "Ahmet";
         doctor.surname = "Er";
-        return doctor.getClass().getName();
+        return doctor.getClass().getName() + " " + mrMachine.toString() ;
     }
 
     @GET
     @Path("doctors")
     @Counted(name = "list_of_doctors")
-    @Gauge(unit = MetricUnits.MINUTES)
     public List<Doctor> getDoctorListinER() {
         return emergencyRoom.getDoctorList();
     }

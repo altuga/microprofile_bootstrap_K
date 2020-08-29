@@ -31,7 +31,7 @@ public class EmergencyRoom {
         entityManager.persist(doctor);
         logger.warning("log doctor name  --> " + doctor.name);
 
-        doesntmatter.save();
+        //doesntmatter.save();
         //DB -->
         // entityManager.flush();
         // DB <--
